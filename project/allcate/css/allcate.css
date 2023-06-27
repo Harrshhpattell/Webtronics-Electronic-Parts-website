@@ -1,0 +1,246 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+}
+
+.sec1{
+    margin-top: -7px;
+}
+.sec_div{
+    height: auto;
+    padding: 10px 100px;
+    background-color: #ebebeb;
+}
+.sec_div_1{
+    display: flex;
+    margin: 0px 71px;
+    width: 79%;
+}
+
+.path > a{
+    text-decoration: none;
+}
+
+#sensor{
+    height: 100px;
+    margin: 30px;
+}
+
+h1{
+    color: rgb(70 70 237);
+    padding: 5px 0px;
+    font-size: 40px;
+    font-family: "poppins";
+}
+#head2,#head4{
+    font-size: 20px;
+    font-family: "poppins";
+    padding: 5px 0px;
+    color: #553939;
+}
+#hr_line{
+    width: 74%;
+    margin: 19px auto;
+    height: 3px;
+    border: none;
+    background-color: #78b7b7;
+}
+#Sen_Cat{
+    background-color: #e3e3e3;
+    margin-top: 50px;
+    padding: 1px;
+    text-align: center;
+}
+@media (max-width: 1262px){
+    .sec_div{
+        /* margin: 0px 3%; */
+        padding: 5px 10px;
+    }
+    .sec_div_1{
+        margin: auto;
+        width: 90%;
+    }
+    #head1{
+        font-size: 30px;
+    }
+    #head2,#head4{
+        font-size: 20px;
+    }
+}
+@media (max-width: 700px){
+    .sec_div_1{
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    #sensor{
+        display: block;
+        margin: auto;
+    }
+}
+
+
+/*card*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+    .product-list {
+      background-color: #eeeeee;
+      border-radius: 30px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+      margin: 5% 10%;
+    }
+    .product-list img {
+      margin: 0;
+      border-radius: 30px 0 0 30px;
+    }
+    .responsive {
+  width: 100%;
+  height: 100%;
+}
+    .product-list h3 {
+      color: #2a2f4f;
+      font-family: "Roboto Slab", serif;
+    }
+    .product-list .price {
+      font-size: 1.5rem;
+      color: #577d86;
+      font-style: italic;
+      font-family: "Roboto Slab", serif;
+      margin-right: 50%;
+      padding-left: 1%;
+      background-image: linear-gradient(to right, #f3e99f, #eeeeee);
+    }
+    .product-list .descr{
+        overflow: hidden;
+         text-overflow: ellipsis;
+         display: -webkit-box;
+         -webkit-line-clamp: 2;
+         line-clamp: 2;
+         -webkit-box-orient: vertical;
+    }
+    /* CSS */
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 3% 0 0 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+@media (max-width :1199px){
+    .button-28 {
+    margin: 3% 0 0 0;
+    }
+}
+@media (max-width:991px) and (min-width:767px){
+    .responsive {
+  height: 100%;
+}
+}
+@media (max-width:767px){
+    #sec-prod{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .product-list{
+        width: 40%;
+        margin: 5% 6%;
+    }
+    .product-list img {
+      border-radius: 30px 30px 0 0;
+    }
+    .product-list .detail h3{
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+}
+@media (max-width:664px){
+    .product-list{
+        width: 38%;
+        height: 300px;
+        border-radius: 10px;
+    }
+    .product-list .detail h3{
+        font-size: 15px;
+        margin: -35px 0px 10px 0px;
+    }
+    .product-list .descr{
+         display: none;
+    }
+    .button-28 {
+        min-height: 35px;
+        font-size: 12px;
+}
+}
+@media(max-width:400px){
+    .product-list .detail h3{
+        font-size: 10px;
+    }
+    .product-list .price {
+      font-size: 12px;
+    }
+    .button-28{
+        min-height: 20px;
+    font-size: 11px;
+    padding: 3px;
+    border: 1px solid #1A1A1A;
+    border-radius: 5px;
+    margin-bottom: 0;
+    }
+}
+
+/* manufecture  */
+.manufacturer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.company_logo{
+    width: 179px;
+    height: 153px;
+    border-radius: 80px;
+    text-align: center;
+}
+
+
